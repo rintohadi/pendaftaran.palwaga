@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     TextView hasile;
     RadioButton r1,r2;
     CheckBox c1,c2,c3;
+    Spinner spi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         c1 = (CheckBox) findViewById(R.id.checkBox);
         c2 = (CheckBox) findViewById(R.id.checkBox2);
         c3 = (CheckBox) findViewById(R.id.checkBox3);
+        spi = (Spinner) findViewById(R.id.spinner);
 
         buton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,8 +46,7 @@ public class MainActivity extends AppCompatActivity {
         if (isValid())
         {
             String nama = znama.getText().toString();
-            hasile.setText("Nama   : "+nama);
-            String qwe = "\nGunung yang ingin dikunjungi   : \n";
+            String qwe = "\nGunung yang ingin dikunjungi : \n";
             int startlen = qwe.length();
             if(c1.isChecked()) qwe+=c1.getText()+"\n";
             if(c2.isChecked()) qwe+=c2.getText()+"\n";
@@ -66,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
             }
             else
             {
-                hasile.setText("Nama        : "+nama
-                +"\nJenis kelamin   : " + hasil+qwe);
+                hasile.setText("Nama : "+nama
+                +"\nJenis kelamin : " + hasil+qwe+"jabatan yang diinginkan : "+spi.getSelectedItem().toString());
             }
 
         }

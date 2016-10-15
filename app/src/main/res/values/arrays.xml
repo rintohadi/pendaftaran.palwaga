@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jabatan">
+        <item>Ketua Umum</item>
+        <item>Ketua Lapangan</item>
+        <item>Ketua Materi</item>
+        <item>Sekretaris</item>
+        <item>Bendahara</item>
+        <item>Humas</item>
+        <item>Anggota</item>
+    </string-array>
+</resources>

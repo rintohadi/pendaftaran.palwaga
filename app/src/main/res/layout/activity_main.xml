@@ -104,6 +104,18 @@
         android:id="@+id/checkBox3"
         android:checked="false" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jabatan yang diinginkan"
+        android:id="@+id/textView4" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/jabatan"
+        android:id="@+id/spinner" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
